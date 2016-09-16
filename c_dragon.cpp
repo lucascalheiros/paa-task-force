@@ -29,11 +29,13 @@ int main() {
     sort(diameter.begin(), diameter.begin()+n);
     sort(height.begin(), height.begin()+m);
 
+    int i;
+    int j;
     bool win = true;
     int gold = 0;
 
     //Percorro todas as cabeças
-    for (int i = 0, int j = 0; i < n && win == true; ++i){
+    for (i = 0, j = 0; i < n && win == true; ++i){
       //Acabaram os cavaleiros, mas se estou dentro do loop, não acabaram as cabeças!
       if (j == m){
         win = false;
